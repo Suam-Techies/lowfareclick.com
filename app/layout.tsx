@@ -33,9 +33,9 @@ export const metadata = {
     canonical: "/",
   },
   icons: {
-    icon: "/lowfareclick_logo.png",
-    shortcut: "/lowfareclick_logo.png",
-    apple: "/lowfareclick_logo.png",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
   openGraph: {
     title: "lowfareclick.com",
