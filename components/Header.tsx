@@ -26,11 +26,11 @@ export function Header() {
         </nav>
 
         <div className="desktop-actions d-flex align-items-center gap-3">
-          <Link href="tel:+18445855025" className="header-phone-cta">
+          <Link href="tel:+18556877163" className="header-phone-cta">
             <span className="header-phone-icon">
               <Phone size={18} />
             </span>
-            <span className="header-phone-text">+1-844-585-5025</span>
+            <span className="header-phone-text">+1 855 687 7163</span>
           </Link>
         </div>
       </div>

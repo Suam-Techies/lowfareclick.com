@@ -22,7 +22,7 @@ export function Footer() {
               <div className="phone-icon">
                 <Phone size={18} />
               </div>
-              <a href="tel:+18556877163">+1-855-687-7163</a>
+              <a href="tel:+18556877163">+1 855 687 7163</a>
             </div>
           </div>
 
@@ -54,7 +54,7 @@ export function Footer() {
               </div>
               <div>
                 <span className="label">Phone</span>
-                <p><a href="tel:+18556877163">+1-855-687-7163</a></p>
+                <p><a href="tel:+18556877163">+1 855 687 7163</a></p>
               </div>
               <div>
                 <span className="label">Email</span>

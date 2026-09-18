@@ -108,7 +108,7 @@ export default function BookingsPage() {
 
             <div className="booking-phone-stack">
               <a href="tel:+18556877163" className="booking-phone-pill phone-pill-primary">
-                Toll-Free: <span>+1-855-687-7163</span>
+                Toll-Free: <span>+1 855 687 7163</span>
               </a>
          
             </div>

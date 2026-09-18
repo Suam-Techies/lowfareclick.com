@@ -187,11 +187,13 @@ p {
 }
 
 .desktop-actions {
+  flex-shrink: 0;
   font-size: 0.9rem;
   margin-left: auto;
 }
 
 .header-phone-cta {
+  position: relative;
   display: inline-flex;
   align-items: center;
   gap: 0.7rem;
@@ -202,9 +204,48 @@ p {
   box-shadow: 0 10px 22px rgba(10, 61, 125, 0.22);
   font-weight: 800;
   white-space: nowrap;
+  overflow: hidden;
+  isolation: isolate;
+  max-width: 100%;
+}
+
+.header-phone-cta::before,
+.header-phone-cta::after {
+  content: "";
+  position: absolute;
+  inset: 50% auto auto 1.15rem;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  animation: headerPhoneRipple 2.8s ease-out infinite;
+}
+
+.header-phone-cta::after {
+  animation-delay: 1.2s;
+}
+
+@keyframes headerPhoneRipple {
+  0% {
+    opacity: 0.9;
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+  70% {
+    opacity: 0.25;
+    transform: translate(-50%, -50%) scale(1.6);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.9);
+  }
 }
 
 .header-phone-icon {
+  position: relative;
+  z-index: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -214,10 +255,13 @@ p {
   background: rgba(255, 255, 255, 0.18);
   color: #fff;
   flex-shrink: 0;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
 }
 
 .header-phone-text {
-  font-size: 1.03rem;
+  position: relative;
+  z-index: 1;
+  font-size: clamp(0.8rem, 0.9vw, 1.03rem);
   letter-spacing: -0.02em;
 }
 
@@ -1392,6 +1436,26 @@ p {
 
 .alert {
   border-radius: 16px;
+}
+
+@media (max-width: 1200px) {
+  .header-inner {
+    gap: 0.9rem;
+  }
+
+  .desktop-nav {
+    gap: 1.2rem;
+    font-size: 0.96rem;
+  }
+
+  .header-phone-cta {
+    padding: 0.65rem 0.9rem 0.65rem 0.6rem;
+  }
+
+  .header-phone-icon {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 @media (max-width: 1024px) {
