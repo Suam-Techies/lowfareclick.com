@@ -99,11 +99,13 @@ export default function BookingsPage() {
             <h1>
               Research routes and <span>trip planning</span>
             </h1>
-            <p>General travel guidance for booking research, route comparisons, and trip preparation.</p>
+            <p>Call for general travel information, route comparisons, and trip-planning guidance.</p>
 
             <div className="d-flex flex-wrap gap-3 mt-4 booking-call-row">
               <a href="tel:+18556877163" className="btn btn-primary rounded-pill px-4 py-3 booking-call-btn">
+                <Phone size={18} aria-hidden="true" />
                 Call Now
+                <span className="booking-call-number">+1 855 687 7163</span>
               </a>
             </div>
 
@@ -111,15 +113,11 @@ export default function BookingsPage() {
               <a href="tel:+18556877163" className="booking-phone-pill phone-pill-primary">
                 Toll-Free: <span>+1 855 687 7163</span>
               </a>
-              <p className="booking-phone-disclosure">
-                LowFareClick operates this line for general travel information inquiries. Calls may be routed to a third-party service provider and standard carrier rates may apply. We are not affiliated with any airline and do not provide official airline customer support.
-              </p>
             </div>
 
             <div className="booking-feature-list">
-              <span className="booking-feature-item">General travel information by phone</span>
-              <span className="booking-feature-item">Route and trip-planning guidance</span>
-              <span className="booking-feature-item">Official airline channels for booking questions</span>
+              <span className="booking-feature-item">Quick Response - Answering calls promptly</span>
+              <span className="booking-feature-item">Professional Guidance </span>
             </div>
           </div>
 
@@ -131,6 +129,18 @@ export default function BookingsPage() {
               Grab This Deal
             </a>
           </div>
+        </div>
+
+        <div className="container booking-mobile-banner">
+          <a href="tel:+18556877163" aria-label="Call now at +1 855 687 7163">
+            <Image
+              src="/banner.png"
+              alt="Call for travel assistance: +1 855 687 7163"
+              width={1240}
+              height={1268}
+              sizes="(max-width: 768px) 100vw"
+            />
+          </a>
         </div>
 
         <div className="container search-wrap">
@@ -297,11 +307,6 @@ export default function BookingsPage() {
         </div>
       </section>
 
-      <a href="tel:+18556877163" className="mobile-booking-call-cta">
-        <Phone size={18} />
-        <span>Call Now</span>
-        <span>(855) 687 7163</span>
-      </a>
     </main>
   );
 }
