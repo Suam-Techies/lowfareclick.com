@@ -86,20 +86,21 @@ export const metadata = {
 export default function BookingsPage() {
   return (
     <main className="page-shell bookings-page">
-      <section className="hero-section bookings-hero">
-        <div className="bookings-hero-background" aria-hidden="true" />
 
+      <section className="hero-section bookings-hero"> 
+        <div className="d-flex flex-wrap gap-3 mt-4 booking-call-row">
+              <a href="tel:+18556877163" className="btn btn-primary rounded-pill px-4 py-3 booking-call-btn">
+                <Phone size={18} aria-hidden="true" />
+                Call Now
+                <span className="booking-call-number">+1 855 687 7163</span>
+              </a>
+            </div>
+     
         <div className="container hero-inner bookings-hero-inner">
           <div className="hero-copy bookings-hero-copy">
-            <div className="eyebrow d-inline-flex align-items-center gap-2 booking-support-pill">
-              <span className="eyebrow-pill" />
-              24/7 Reservation Assistance
-            </div>
+            <h1>24/7 Reservation Assistance</h1>
 
-            <h1>
-              Research routes and <span>trip planning</span>
-            </h1>
-            <p>Call for general travel information, route comparisons, and trip-planning guidance.</p>
+            <p>Call for existing reservations, changes and Cancellation.</p>
 
             <div className="d-flex flex-wrap gap-3 mt-4 booking-call-row">
               <a href="tel:+18556877163" className="btn btn-primary rounded-pill px-4 py-3 booking-call-btn">

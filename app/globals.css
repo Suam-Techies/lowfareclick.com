@@ -265,6 +265,10 @@ p {
   letter-spacing: -0.02em;
 }
 
+body:has(.bookings-page) .site-header {
+  display: none;
+}
+
 .header-phone-disclosure,
 .footer-phone-disclosure,
 .booking-phone-disclosure {
@@ -1622,6 +1626,14 @@ p {
     padding: 0.75rem;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.96);
+  }
+
+  .bookings-hero > .booking-call-row {
+    position: relative;
+    z-index: 1;
+    width: min(100%, 32.25rem);
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .booking-call-btn {
