@@ -6,6 +6,7 @@ import {
   CalendarCheck2,
   Headphones,
   PlaneTakeoff,
+  Phone,
   ShieldCheck,
   Star,
   Ticket,
@@ -31,8 +32,8 @@ const perks = [
   },
   {
     icon: <Headphones size={22} />,
-    title: "Expert support",
-    text: "Speak with a travel specialist when you need route guidance or booking help.",
+    title: "Travel guidance",
+    text: "Review general route information and get clear trip-planning guidance before you book through a provider.",
   },
 ];
 
@@ -71,8 +72,8 @@ const articlePoints = [
     text: "Search flights quickly, compare options clearly, and book with confidence using a streamlined process that keeps things simple.",
   },
   {
-    title: "Connect with our travel experts:",
-    text: "Need help with your itinerary or route selection? Our support team can guide you through planning and booking decisions.",
+    title: "General trip guidance:",
+    text: "Need route ideas or planning guidance? Our team can provide general travel information and direct you to the relevant official airline contact channels when needed.",
   },
 ];
 
@@ -92,13 +93,13 @@ export default function BookingsPage() {
           <div className="hero-copy bookings-hero-copy">
             <div className="eyebrow d-inline-flex align-items-center gap-2 booking-support-pill">
               <span className="eyebrow-pill" />
-              24x7 Customer Support
+              24/7 Reservation Assistance
             </div>
 
             <h1>
-              Talk to our <span>Travel Experts</span>
+              Research routes and <span>trip planning</span>
             </h1>
-            <p>Support for New Bookings, Changes and Cancellations</p>
+            <p>General travel guidance for booking research, route comparisons, and trip preparation.</p>
 
             <div className="d-flex flex-wrap gap-3 mt-4 booking-call-row">
               <a href="tel:+18556877163" className="btn btn-primary rounded-pill px-4 py-3 booking-call-btn">
@@ -110,13 +111,15 @@ export default function BookingsPage() {
               <a href="tel:+18556877163" className="booking-phone-pill phone-pill-primary">
                 Toll-Free: <span>+1 855 687 7163</span>
               </a>
-         
+              <p className="booking-phone-disclosure">
+                LowFareClick operates this line for general travel information inquiries. Calls may be routed to a third-party service provider and standard carrier rates may apply. We are not affiliated with any airline and do not provide official airline customer support.
+              </p>
             </div>
 
             <div className="booking-feature-list">
-              <span className="booking-feature-item">Direct support by phone</span>
-              <span className="booking-feature-item">Travel guidance from expert agents</span>
-              <span className="booking-feature-item">Helpful assistance before and during booking</span>
+              <span className="booking-feature-item">General travel information by phone</span>
+              <span className="booking-feature-item">Route and trip-planning guidance</span>
+              <span className="booking-feature-item">Official airline channels for booking questions</span>
             </div>
           </div>
 
@@ -189,10 +192,10 @@ export default function BookingsPage() {
           <div className="row g-4 align-items-center">
             <div className="col-lg-6">
               <div className="promo-content card-box">
-                <p className="eyebrow text-primary mb-2">Travel support</p>
-                <h2 className="section-title">Need help choosing the right flight?</h2>
+                <p className="eyebrow text-primary mb-2">Travel information</p>
+                <h2 className="section-title">Need route guidance or trip-planning help?</h2>
                 <p className="mt-3">
-                  Our travel experts are ready to help with route planning, fare questions, and changes to your itinerary before or after you book.
+                  LowFareClick provides general travel information and booking research guidance. We can help you compare options and direct you to official airline contact channels when needed. We are not affiliated with any airline and do not provide official airline customer support.
                 </p>
                 <ul className="promo-list">
                   {supportPoints.map((point) => (
@@ -223,8 +226,8 @@ export default function BookingsPage() {
                     <small>Customer satisfaction</small>
                   </div>
                   <div className="floating-stat">
-                    <span>24/7</span>
-                    <small>Expert support</small>
+                    <span>Info</span>
+                    <small>General guidance</small>
                   </div>
                 </div>
               </div>
@@ -276,8 +279,8 @@ export default function BookingsPage() {
           <div className="newsletter-card card-box">
             <div className="row align-items-center gy-4">
               <div className="col-lg-7">
-                <p className="eyebrow mb-2 text-white-50">24/7 travel support</p>
-                <h2 className="section-title mb-0">Ready to book your next trip?</h2>
+                <p className="eyebrow mb-2 text-white-50">Independent travel research</p>
+                <h2 className="section-title mb-0">Ready to research your next trip?</h2>
               </div>
               <div className="col-lg-5 text-lg-end">
                 <div className="d-flex flex-column flex-md-row justify-content-lg-end gap-2">
@@ -293,6 +296,12 @@ export default function BookingsPage() {
           </div>
         </div>
       </section>
+
+      <a href="tel:+18556877163" className="mobile-booking-call-cta">
+        <Phone size={18} />
+        <span>Call Now</span>
+        <span>+1 855 687 7163</span>
+      </a>
     </main>
   );
 }

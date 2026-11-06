@@ -20,10 +20,11 @@ export default function ContactPage() {
         <div className="row g-4">
           <div className="col-lg-5">
             <div className="summary-panel">
-              <h2 className="h4 mb-3">Customer Support</h2>
+              <h2 className="h4 mb-3">General inquiries</h2>
               <div className="summary-list">
                 <div className="summary-item"><span>Email</span><strong>support@lowfareclick.com</strong></div>
                 <div className="summary-item"><span>Phone</span><strong>+1 855 687 7163</strong></div>
+                <div className="summary-item"><span>Phone notice</span><strong>LowFareClick is an independent travel information platform. Calls may be routed to a third-party service provider and standard carrier rates may apply. We are not affiliated with any airline and do not provide official airline customer support.</strong></div>
                 <div className="summary-item"><span>Business Hours</span><strong>Mon-Fri, 9:00 AM - 6:00 PM CST</strong></div>
                 <div className="summary-item"><span>Business Address</span><strong>100 E Wisconsin Ave Suite 3300, Milwaukee, WI 53202</strong></div>
               </div>

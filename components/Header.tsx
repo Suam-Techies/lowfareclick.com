@@ -25,13 +25,14 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="desktop-actions d-flex align-items-center gap-3">
+        <div className="desktop-actions d-flex flex-column align-items-end gap-1">
           <Link href="tel:+18556877163" className="header-phone-cta">
             <span className="header-phone-icon">
               <Phone size={18} />
             </span>
             <span className="header-phone-text">+1 855 687 7163</span>
           </Link>
+          <span className="header-phone-disclosure">Independent travel info line · standard carrier rates may apply</span>
         </div>
       </div>
     </header>

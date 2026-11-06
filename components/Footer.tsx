@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Globe, MessageSquare, Phone, Plane, Send } from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 import { BrandLogo } from "@/components/BrandLogo";
 
 export function Footer() {
@@ -24,6 +24,9 @@ export function Footer() {
               </div>
               <a href="tel:+18556877163">+1 855 687 7163</a>
             </div>
+            <p className="footer-phone-disclosure mt-2">
+              LowFareClick operates this line for general travel information inquiries. Calls may be routed to a third-party service provider and standard carrier rates may apply. We are not affiliated with any airline and do not provide official airline customer support.
+            </p>
           </div>
 
           <div className="col-lg-2 col-md-6">
@@ -79,12 +82,7 @@ export function Footer() {
           <div className="footer-meta">© 2026 LowFareClick. All rights reserved.</div>
 
           <div className="footer-controls d-flex align-items-center gap-3">
-            <div className="social-links">
-              <a href="https://facebook.com" aria-label="Facebook"><Globe size={15} /></a>
-              <a href="https://x.com" aria-label="X"><Send size={15} /></a>
-              <a href="https://linkedin.com" aria-label="LinkedIn"><MessageSquare size={15} /></a>
-              <a href="https://instagram.com" aria-label="Instagram"><Plane size={15} /></a>
-            </div>
+            <div className="social-links" aria-label="Social media links" />
           </div>
         </div>
       </div>

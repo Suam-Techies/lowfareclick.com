@@ -265,6 +265,24 @@ p {
   letter-spacing: -0.02em;
 }
 
+.header-phone-disclosure,
+.footer-phone-disclosure,
+.booking-phone-disclosure {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.72rem;
+  line-height: 1.5;
+  max-width: 28rem;
+}
+
+.header-phone-disclosure {
+  display: block;
+  color: rgba(15, 32, 64, 0.72);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-align: right;
+}
+
 .mobile-menu-button {
   display: none;
   border: 0;
@@ -551,6 +569,10 @@ p {
   color: #fff;
   font-weight: 800;
   font-size: 1.1rem;
+}
+
+.mobile-booking-call-cta {
+  display: none;
 }
 
 .booking-content-box {
@@ -1039,6 +1061,11 @@ p {
   font-weight: 700;
 }
 
+.footer-phone-disclosure {
+  max-width: 26rem;
+  color: rgba(255, 255, 255, 0.76);
+}
+
 .contact-list {
   display: flex;
   flex-direction: column;
@@ -1484,6 +1511,39 @@ p {
     min-height: 76px;
   }
 
+  .bookings-hero-background {
+    background-image:
+      linear-gradient(rgba(11, 32, 55, 0.48), rgba(11, 32, 55, 0.48)),
+      url("/booking_hero.jpg");
+    filter: none;
+    transform: none;
+  }
+
+  .bookings-hero > .search-wrap,
+  .bookings-page > section:not(.bookings-hero),
+  body:has(.bookings-page) .site-footer {
+    display: none;
+  }
+
+  .mobile-booking-call-cta {
+    position: fixed;
+    z-index: 40;
+    right: 1rem;
+    bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+    left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    min-height: 3.5rem;
+    padding: 0.75rem 1rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #f5a623, #ea7a00);
+    box-shadow: 0 12px 28px rgba(9, 24, 43, 0.3);
+    color: #fff;
+    font-weight: 800;
+  }
+
   .brand-logo-image {
     width: min(210px, 52vw);
   }
@@ -1618,4 +1678,3 @@ p {
     gap: 0.6rem;
   }
 }
-

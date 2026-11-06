@@ -61,7 +61,7 @@ export default function HomePage() {
           <div className="row align-items-center mb-4">
             <div className="col-md-8">
               <p className="eyebrow text-primary mb-2">What we offer</p>
-              <h2 className="section-title">Travel research, route guidance, and planning support.</h2>
+              <h2 className="section-title">Travel research, route guidance, and planning resources.</h2>
             </div>
             <div className="col-md-4 text-md-end">
               <Link href="/bookings" className="text-link-primary">
@@ -73,7 +73,7 @@ export default function HomePage() {
           <div className="row g-4">
             {[
               { icon: <ShieldCheck size={22} />, title: "Independent travel information", text: "We provide general route and destination research without tying you to a single airline or booking channel." },
-              { icon: <Headphones size={22} />, title: "Free support", text: "Get help with airline contact information, travel questions, and planning before you complete a booking." },
+              { icon: <Headphones size={22} />, title: "Independent travel guidance", text: "We provide general travel research and can direct you to official airline contact channels. We are not affiliated with any airline and do not provide official airline customer support." },
               { icon: <Globe2 size={22} />, title: "Route research", text: "Explore common travel routes, airports, and planning details to better understand your trip options." },
               { icon: <CalendarCheck2 size={22} />, title: "Trip planning", text: "Review essential travel considerations to prepare for your journey with more confidence." },
             ].map((item) => (
@@ -141,8 +141,8 @@ export default function HomePage() {
                   <div className="info-point">
                     <span className="info-point-icon">✓</span>
                     <div>
-                      <strong>Transparent support</strong>
-                      <p>Get direct contact help and clear information when travel questions come up.</p>
+                      <strong>Clear travel guidance</strong>
+                      <p>We provide general travel research and can direct you to official airline contact channels. We are not affiliated with any airline and do not provide official airline customer support.</p>
                     </div>
                   </div>
                 </div>
@@ -166,8 +166,8 @@ export default function HomePage() {
                     <small>route searches</small>
                   </div>
                   <div className="floating-stat muted">
-                    <span>24/7</span>
-                    <small>travel help</small>
+                    <span>Info</span>
+                    <small>travel research</small>
                   </div>
                 </div>
               </div>
@@ -182,10 +182,10 @@ export default function HomePage() {
             <div className="row align-items-center g-4">
               <div className="col-lg-7">
                 <p className="eyebrow text-primary mb-2">Travel planning</p>
-                <h2 className="section-title mb-3">Need help comparing routes or preparing for a trip?</h2>
+                <h2 className="section-title mb-3">Need route research or trip-planning guidance?</h2>
                 <p className="mb-0">
-                  LowFareClick provides neutral travel information and planning support to help visitors research routes,
-                  destinations, and key trip details before booking through an airline or travel provider.
+                  LowFareClick provides independent travel information and planning resources to help visitors research routes,
+                  destinations, and key trip details before booking through an airline or travel provider. We are not affiliated with any airline and do not provide official airline customer support.
                 </p>
               </div>
               <div className="col-lg-5 text-lg-end">
