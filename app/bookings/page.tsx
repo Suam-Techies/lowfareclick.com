@@ -300,7 +300,7 @@ export default function BookingsPage() {
       <a href="tel:+18556877163" className="mobile-booking-call-cta">
         <Phone size={18} />
         <span>Call Now</span>
-        <span>+1 855 687 7163</span>
+        <span>(855) 687 7163</span>
       </a>
     </main>
   );
