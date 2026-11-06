@@ -87,15 +87,17 @@ export default function BookingsPage() {
   return (
     <main className="page-shell bookings-page">
 
-      <section className="hero-section bookings-hero"> 
-        <div className="d-flex flex-wrap gap-3 mt-4 booking-call-row">
-              <a href="tel:+18556877163" className="btn btn-primary rounded-pill px-4 py-3 booking-call-btn">
-                <Phone size={18} aria-hidden="true" />
-                Call Now
-                <span className="booking-call-number">+1 855 687 7163</span>
-              </a>
-            </div>
-     
+      <section className="hero-section bookings-hero">
+        <div className="container booking-hero-top-call">
+          <div className="d-flex flex-wrap gap-3 booking-call-row booking-call-row-top">
+            <a href="tel:+18556877163" className="btn btn-primary rounded-pill px-4 py-3 booking-call-btn">
+              <Phone size={18} aria-hidden="true" />
+              Call Now
+              <span className="booking-call-number">+1 855 687 7163</span>
+            </a>
+          </div>
+        </div>
+
         <div className="container hero-inner bookings-hero-inner">
           <div className="hero-copy bookings-hero-copy">
             <h1>24/7 Reservation Assistance</h1>

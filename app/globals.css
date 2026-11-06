@@ -388,6 +388,16 @@ body:has(.bookings-page) .site-header {
   background: rgba(11, 32, 55, 0.85);
 }
 
+.booking-hero-top-call {
+  position: relative;
+  z-index: 1;
+}
+
+.booking-call-row-top {
+  justify-content: flex-start;
+  margin-top: 0;
+}
+
 .bookings-hero-background {
   position: absolute;
   inset: 0;
@@ -1628,12 +1638,14 @@ body:has(.bookings-page) .site-header {
     background: rgba(255, 255, 255, 0.96);
   }
 
-  .bookings-hero > .booking-call-row {
+  .booking-call-row-top {
     position: relative;
     z-index: 1;
     width: min(100%, 32.25rem);
     margin-right: auto;
     margin-left: auto;
+    margin-top: 0 !important;
+    justify-content: center;
   }
 
   .booking-call-btn {
