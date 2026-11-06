@@ -32,7 +32,6 @@ export function Header() {
             </span>
             <span className="header-phone-text">+1 855 687 7163</span>
           </Link>
-          <span className="header-phone-disclosure">Independent travel info line · standard carrier rates may apply</span>
         </div>
       </div>
     </header>
