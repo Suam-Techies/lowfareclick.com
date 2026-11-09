@@ -144,6 +144,24 @@ export default function BookingsPage() {
               sizes="(max-width: 768px) 100vw"
             />
           </a>
+          <a href="tel:+18556877163" className="mt-5"  aria-label="Call now at +1 855 687 7163">
+            <Image
+              src="/reservation_changes_support_banner-1.png"
+              alt="Call for travel assistance: +1 855 687 7163"
+              width={1240}
+              height={1268}
+              sizes="(max-width: 768px) 100vw"
+            />
+          </a>
+          <a href="tel:+18556877163" className="mt-5"  aria-label="Call now at +1 855 687 7163">
+            <Image
+              src="/reservation_booking_assistance_banner-4.png"
+              alt="Call for travel assistance: +1 855 687 7163"
+              width={1240}
+              height={1268}
+              sizes="(max-width: 768px) 100vw"
+            />
+          </a>
         </div>
 
         <div className="container search-wrap">
