@@ -95,6 +95,11 @@ export default function BookingsPage() {
               Call Now
               <span className="booking-call-number">+1 855 687 7163</span>
             </a>
+              <a href="tel:+448081757364" className="btn btn-primary rounded-pill px-4 py-3 booking-call-btn">
+              <Phone size={18} aria-hidden="true" />
+              Call Now
+              <span className="booking-call-number">+44 8081 757364</span>
+            </a>
           </div>
         </div>
 
@@ -110,12 +115,18 @@ export default function BookingsPage() {
                 Call Now
                 <span className="booking-call-number">+1 855 687 7163</span>
               </a>
+              <a href="tel:+448081757364" className="btn btn-primary rounded-pill px-4 py-3 booking-call-btn">
+                <Phone size={18} aria-hidden="true" />
+                Call Now
+                <span className="booking-call-number">+44 8081 757364</span>
+              </a>
             </div>
 
             <div className="booking-phone-stack">
               <a href="tel:+18556877163" className="booking-phone-pill phone-pill-primary">
                 Toll-Free: <span>+1 855 687 7163</span>
               </a>
+              
             </div>
 
             <div className="booking-feature-list">

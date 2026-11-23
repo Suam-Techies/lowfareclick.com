@@ -500,6 +500,10 @@ body:has(.bookings-page) .site-header {
   margin-left: 0.3rem;
 }
 
+.booking-mobile-phone-link {
+  display: none;
+}
+
 .booking-feature-list {
   display: flex;
   flex-direction: column;
@@ -1682,6 +1686,19 @@ body:has(.bookings-page) .site-header {
 
   .booking-phone-pill {
     display: none;
+  }
+
+  .booking-mobile-phone-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.75rem;
+    padding: 0.55rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 999px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
   }
 
   .booking-hero-panel {
