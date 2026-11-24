@@ -91,12 +91,12 @@ export default function BookingsPage() {
         <div className="container booking-hero-top-call">
           <div className="d-flex flex-wrap gap-3 booking-call-row booking-call-row-top">
             <a href="tel:+18556877163" className="btn btn-primary rounded-pill px-4 py-3 booking-call-btn">
-              <Phone size={18} aria-hidden="true" />
+              <img width="32" height="32" src="https://img.icons8.com/skeuomorphism/32/usa-circular.png" alt="usa-circular"/>
               Call Now
               <span className="booking-call-number">+1 855 687 7163</span>
             </a>
               <a href="tel:+448081757364" className="btn btn-primary rounded-pill px-4 py-3 booking-call-btn">
-              <Phone size={18} aria-hidden="true" />
+              <img width="32" height="32" src="https://img.icons8.com/color/48/great-britain-circular.png" alt="great-britain-circular"/>
               Call Now
               <span className="booking-call-number">+44 8081 757364</span>
             </a>
@@ -111,12 +111,12 @@ export default function BookingsPage() {
 
             <div className="d-flex flex-wrap gap-3 mt-4 booking-call-row">
               <a href="tel:+18556877163" className="btn btn-primary rounded-pill px-4 py-3 booking-call-btn">
-                <Phone size={18} aria-hidden="true" />
+                <img width="32" height="32" src="https://img.icons8.com/skeuomorphism/32/usa-circular.png" alt="usa-circular"/>
                 Call Now
                 <span className="booking-call-number">+1 855 687 7163</span>
               </a>
               <a href="tel:+448081757364" className="btn btn-primary rounded-pill px-4 py-3 booking-call-btn">
-                <Phone size={18} aria-hidden="true" />
+                <img width="32" height="32" src="https://img.icons8.com/color/48/great-britain-circular.png" alt="great-britain-circular"/>
                 Call Now
                 <span className="booking-call-number">+44 8081 757364</span>
               </a>

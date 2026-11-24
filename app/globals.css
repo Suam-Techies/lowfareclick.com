@@ -1668,7 +1668,9 @@ body:has(.bookings-page) .site-header {
   }
 
   .booking-call-number {
-    display: inline;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
     white-space: nowrap;
   }
 
