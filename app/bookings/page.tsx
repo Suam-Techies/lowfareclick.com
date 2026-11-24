@@ -95,11 +95,7 @@ export default function BookingsPage() {
               Call Now
               <span className="booking-call-number">+1 855 687 7163</span>
             </a>
-              <a href="tel:+448081757364" className="btn btn-primary rounded-pill px-4 py-3 booking-call-btn">
-              <img width="32" height="32" src="https://img.icons8.com/color/48/great-britain-circular.png" alt="great-britain-circular"/>
-              Call Now
-              <span className="booking-call-number">+44 8081 757364</span>
-            </a>
+             
           </div>
         </div>
 
@@ -115,11 +111,7 @@ export default function BookingsPage() {
                 Call Now
                 <span className="booking-call-number">+1 855 687 7163</span>
               </a>
-              <a href="tel:+448081757364" className="btn btn-primary rounded-pill px-4 py-3 booking-call-btn">
-                <img width="32" height="32" src="https://img.icons8.com/color/48/great-britain-circular.png" alt="great-britain-circular"/>
-                Call Now
-                <span className="booking-call-number">+44 8081 757364</span>
-              </a>
+             
             </div>
 
             <div className="booking-phone-stack">
