@@ -265,10 +265,6 @@ p {
   letter-spacing: -0.02em;
 }
 
-body:has(.bookings-page) .site-header {
-  display: none;
-}
-
 .header-phone-disclosure,
 .footer-phone-disclosure,
 .booking-phone-disclosure {
@@ -1545,12 +1541,6 @@ body:has(.bookings-page) .site-header {
     transform: none;
   }
 
-  .bookings-hero > .search-wrap,
-  .bookings-page > section:not(.bookings-hero),
-  body:has(.bookings-page) .site-footer {
-    display: none;
-  }
-
   .booking-mobile-banner {
     position: relative;
     z-index: 1;
@@ -1701,10 +1691,6 @@ body:has(.bookings-page) .site-header {
     color: #fff;
     font-weight: 700;
     text-decoration: none;
-  }
-
-  .booking-hero-panel {
-    display: none;
   }
 
   .brand-logo-image {

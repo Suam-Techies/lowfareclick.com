@@ -18,12 +18,7 @@ export function Footer() {
               An independent travel information platform for destination research and trip-planning guidance.
             </p>
 
-            <div className="footer-phone-callout mt-4">
-              <div className="phone-icon">
-                <Phone size={18} />
-              </div>
-              <a href="tel:+18556877163">+1 855 687 7163</a>
-            </div>
+        
             <p className="footer-phone-disclosure mt-2">
               LowFareClick operates this line for general travel information inquiries. Calls may be routed to a third-party service provider and standard carrier rates may apply. We are not affiliated with any airline and do not provide official airline customer support.
             </p>

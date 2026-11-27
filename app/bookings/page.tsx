@@ -1,14 +1,10 @@
 import Link from "next/link";
-import Image from "next/image";
 import {
   ArrowRight,
   BadgeCheck,
   CalendarCheck2,
   Headphones,
-  PlaneTakeoff,
-  Phone,
   ShieldCheck,
-  Star,
   Ticket,
   Wallet,
 } from "lucide-react";
@@ -39,17 +35,14 @@ const perks = [
 
 const steps = [
   {
-    number: "01",
     title: "Search flights",
     text: "Use flexible dates and destination filters to compare the options that best fit your trip.",
   },
   {
-    number: "02",
     title: "Choose your fare",
     text: "Review baggage, schedule, and value before selecting your preferred itinerary.",
   },
   {
-    number: "03",
     title: "Confirm and travel",
     text: "Complete the booking and travel with confidence knowing support is available.",
   },
@@ -88,83 +81,19 @@ export default function BookingsPage() {
     <main className="page-shell bookings-page">
 
       <section className="hero-section bookings-hero">
-        <div className="container booking-hero-top-call">
-          <div className="d-flex flex-wrap gap-3 booking-call-row booking-call-row-top">
-            <a href="tel:+18556877163" className="btn btn-primary rounded-pill px-4 py-3 booking-call-btn">
-              <img width="32" height="32" src="https://img.icons8.com/skeuomorphism/32/usa-circular.png" alt="usa-circular"/>
-              Call Now
-              <span className="booking-call-number">+1 855 687 7163</span>
-            </a>
-             
-          </div>
-        </div>
-
         <div className="container hero-inner bookings-hero-inner">
           <div className="hero-copy bookings-hero-copy">
-            <h1>24/7 Reservation Assistance</h1>
-
-            <p>Call for existing reservations, changes and Cancellation.</p>
-
-            <div className="d-flex flex-wrap gap-3 mt-4 booking-call-row">
-              <a href="tel:+18556877163" className="btn btn-primary rounded-pill px-4 py-3 booking-call-btn">
-                <img width="32" height="32" src="https://img.icons8.com/skeuomorphism/32/usa-circular.png" alt="usa-circular"/>
-                Call Now
-                <span className="booking-call-number">+1 855 687 7163</span>
-              </a>
-             
-            </div>
-
-            <div className="booking-phone-stack">
-              <a href="tel:+18556877163" className="booking-phone-pill phone-pill-primary">
-                Toll-Free: <span>+1 855 687 7163</span>
-              </a>
-              
-            </div>
-
-            <div className="booking-feature-list">
-              <span className="booking-feature-item">Quick Response - Answering calls promptly</span>
-              <span className="booking-feature-item">Professional Guidance </span>
-            </div>
+            <h1>Flight Reservations</h1>
+            <p>Search flights, compare options, and plan your next trip.</p>
           </div>
 
           <div className="booking-hero-panel">
-            <div className="booking-hot-deal-badge">HOT DEAL</div>
-            <h3>Fly More. Spend Less.</h3>
-            <p>on your next flight booking. Limited-time offer.</p>
-            <a href="/flights" className="booking-deal-btn">
-              Grab This Deal
-            </a>
+            <h3>Plan Your Journey</h3>
+            <p>Compare routes and fares to find an itinerary that fits your plans.</p>
+            <Link href="/flights" className="booking-deal-btn">
+              Browse Flights
+            </Link>
           </div>
-        </div>
-
-        <div className="container booking-mobile-banner">
-          <a href="tel:+18556877163" aria-label="Call now at +1 855 687 7163">
-            <Image
-              src="/banner.png"
-              alt="Call for travel assistance: +1 855 687 7163"
-              width={1240}
-              height={1268}
-              sizes="(max-width: 768px) 100vw"
-            />
-          </a>
-          <a href="tel:+18556877163" className="mt-5"  aria-label="Call now at +1 855 687 7163">
-            <Image
-              src="/reservation_changes_support_banner-1.png"
-              alt="Call for travel assistance: +1 855 687 7163"
-              width={1240}
-              height={1268}
-              sizes="(max-width: 768px) 100vw"
-            />
-          </a>
-          <a href="tel:+18556877163" className="mt-5"  aria-label="Call now at +1 855 687 7163">
-            <Image
-              src="/reservation_booking_assistance_banner-4.png"
-              alt="Call for travel assistance: +1 855 687 7163"
-              width={1240}
-              height={1268}
-              sizes="(max-width: 768px) 100vw"
-            />
-          </a>
         </div>
 
         <div className="container search-wrap">
@@ -209,9 +138,8 @@ export default function BookingsPage() {
 
           <div className="row g-4">
             {steps.map((step) => (
-              <div key={step.number} className="col-md-4">
+              <div key={step.title} className="col-md-4">
                 <div className="card-box p-4 h-100">
-                  <div className="eyebrow text-primary mb-2">{step.number}</div>
                   <h3 className="h4 mb-3">{step.title}</h3>
                   <p className="text-muted">{step.text}</p>
                 </div>
@@ -238,32 +166,19 @@ export default function BookingsPage() {
                     </li>
                   ))}
                 </ul>
-                <a href="tel:+18556877163" className="btn btn-primary rounded-pill px-4 mt-4">
-                  Call +1 855 687 7163
-                </a>
+                <Link href="/flights" className="btn btn-primary rounded-pill px-4 mt-4">
+                  Search Flights
+                </Link>
               </div>
             </div>
 
             <div className="col-lg-6">
-              <div className="travel-visual-card">
-                <Image
-                  src="https://images.unsplash.com/photo-1542296332-2e4473faf563?auto=format&fit=crop&w=1200&q=80"
-                  alt="Business class seating"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-fit-cover"
-                />
-
-                <div className="visual-floating-card">
-                  <div className="floating-stat">
-                    <span>4.9/5</span>
-                    <small>Customer satisfaction</small>
-                  </div>
-                  <div className="floating-stat">
-                    <span>Info</span>
-                    <small>General guidance</small>
-                  </div>
-                </div>
+              <div className="card-box p-4 h-100">
+                <ShieldCheck size={32} className="text-primary mb-3" />
+                <h3>Clear Trip Information</h3>
+                <p className="text-muted mb-0">
+                  Compare schedules, baggage options, and fare details before choosing your itinerary.
+                </p>
               </div>
             </div>
           </div>
@@ -295,12 +210,12 @@ export default function BookingsPage() {
                 <div className="support-side-card">
                   <div className="support-side-header">
                     <Headphones size={18} />
-                    <span>Speak With a Live Agent</span>
+                      <span>Travel Assistance</span>
                   </div>
-                  <p>Grab unpublished fares and instant help with your booking.</p>
-                  <a href="tel:+18556877163" className="btn btn-primary rounded-pill w-100 mt-3">
-                    Call Us Now
-                  </a>
+                    <p>Get clear guidance about routes and booking options.</p>
+                    <Link href="/contact" className="btn btn-primary rounded-pill w-100 mt-3">
+                      Contact Us
+                    </Link>
                 </div>
               </div>
             </div>
@@ -321,9 +236,9 @@ export default function BookingsPage() {
                   <Link href="/flights" className="btn btn-light rounded-pill px-4">
                     Browse flights
                   </Link>
-                  <a href="tel:+18556877163" className="btn btn-outline-light rounded-pill px-4">
-                    Call now
-                  </a>
+                  <Link href="/contact" className="btn btn-outline-light rounded-pill px-4">
+                    Contact us
+                  </Link>
                 </div>
               </div>
             </div>
