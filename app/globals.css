@@ -593,6 +593,10 @@ p {
   display: none;
 }
 
+body:has(.bookings-page) .site-header {
+  display: none;
+}
+
 .booking-content-box {
   padding: 2rem;
 }
@@ -1541,6 +1545,12 @@ p {
     transform: none;
   }
 
+  .bookings-hero > .search-wrap,
+  .bookings-page > section:not(.bookings-hero),
+  body:has(.bookings-page) .site-footer {
+    display: none;
+  }
+
   .booking-mobile-banner {
     position: relative;
     z-index: 1;
@@ -1677,6 +1687,10 @@ p {
   }
 
   .booking-phone-pill {
+    display: none;
+  }
+
+  .booking-hero-panel {
     display: none;
   }
 
